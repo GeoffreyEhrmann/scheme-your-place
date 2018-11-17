@@ -1,0 +1,59 @@
+{
+  "name": "mabla-css",
+  "version": "0.1.0",
+  "private": true,
+  "browserslist": [
+    "> 1%"
+  ],
+  "dependencies": {
+    "babel-es6-polyfill": "^1.1.0",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap4": "^0.0.1-security",
+    "font-awesome": "^4.7.0",
+    "google-maps-react": "^1.1.2",
+    "moment": "^2.21.0",
+    "react": "^16.2.0",
+    "react-color": "^2.14.1",
+    "react-dates": "^12.6.0",
+    "react-dom": "^16.1.1",
+    "react-mobile-datepicker": "3.0.8",
+    "react-redux": "^5.0.6",
+    "react-redux-i18n": "^1.9.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-form": "^7.2.0",
+    "redux-thunk": "^2.2.0",
+    "universal-cookie": "^2.1.2",
+    "yarn": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-compat": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "flow-bin": "^0.66.0",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-scripts": "^1.0.17"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:8080"
+    }
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/sass/app.scss -o src/css/",
+    "watch-css": "yarn run build-css && node-sass-chokidar src/sass/ -o src/css/ --watch --recursive",
+    "flow": "flow",
+    "start-js": "react-scripts start",
+    "start": "run-p watch-css start-js",
+    "build": "yarn run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

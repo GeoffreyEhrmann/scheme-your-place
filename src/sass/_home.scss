@@ -1,0 +1,52 @@
+.home {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  grid-template-areas:
+          "M D D D D"
+          "M D D D D"
+          "M D D D D"
+          "M D D D D";
+  .menu {
+    grid-area: M;
+    background: dodgerblue;
+    border-radius: 5px;
+    .tabs {
+      display: flex;
+      .tab {
+        flex-grow: 1;
+        &--selected {
+          background: #FFF;
+        }
+      }
+    }
+  }
+  .drawing-zone {
+    grid-area: D;
+    max-width: calc(100vh - 20px);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .my-place {
+      position: relative;
+      border: 1px solid red;
+
+      .meuble {
+        position: absolute;
+        border: 1px solid #DDD;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    }
+  }
+}
