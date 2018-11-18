@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e918676-1abd-4686-81ff-972b4008df37" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,21 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="136">
+              <caret line="50" column="55" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env.development" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/.env.development">
+      <file leaf-file-name=".env.development" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.development">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -95,8 +96,8 @@
             <state relative-caret-position="190">
               <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="21" />
               <folding>
-                <marker date="1542512636465" expanded="true" signature="256:324" ph="{...}" />
-                <marker date="1542512636465" expanded="true" signature="1031:1138" ph="{...}" />
+                <marker date="1542514092811" expanded="true" signature="256:324" ph="{...}" />
+                <marker date="1542514092811" expanded="true" signature="1031:1138" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -156,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/pages/Home.jsx" />
         <option value="$PROJECT_DIR$/src/sass/_home.scss" />
         <option value="$PROJECT_DIR$/src/pages/DrawYourPlace.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/.env.development" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -205,6 +206,11 @@
               <item name="scheme-your-place" type="b2602c69:ProjectViewProjectNode" />
               <item name="scheme-your-place" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="scheme-your-place" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheme-your-place" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -227,9 +233,12 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="C:\Users\geoff\IdeaProjects\scheme-your-place\node_modules\eslint-config-airbnb\node_modules\.bin" />
-    <property name="SearchEverywhereHistoryKey" value="pack&#9;FILE&#9;file://C:/Users/geoff/IdeaProjects/scheme-your-place/package.json" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/geoff/IdeaProjects/scheme-your-place/package.json&#10;pack&#9;FILE&#9;file://C:/Users/geoff/IdeaProjects/scheme-your-place/package.json" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\geoff\IdeaProjects\scheme-your-place" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\geoff\IdeaProjects\scheme-your-place\src\sass" />
       <recent name="C:\Users\geoff\IdeaProjects\scheme-your-place\src\pages" />
@@ -344,15 +353,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542478707705</updated>
-      <workItem from="1542478709372" duration="33244000" />
+      <workItem from="1542478709372" duration="33745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33244000" />
+    <option name="totallyTimeSpent" value="33745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -366,7 +376,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -450,8 +460,8 @@
         <state relative-caret-position="190">
           <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="21" />
           <folding>
-            <marker date="1542512636465" expanded="true" signature="256:324" ph="{...}" />
-            <marker date="1542512636465" expanded="true" signature="1031:1138" ph="{...}" />
+            <marker date="1542514092811" expanded="true" signature="256:324" ph="{...}" />
+            <marker date="1542514092811" expanded="true" signature="1031:1138" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -518,18 +528,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/.env.development">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/.env.development">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        <state relative-caret-position="136">
+          <caret line="50" column="55" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
           <folding />
         </state>
       </provider>

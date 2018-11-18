@@ -48,7 +48,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://localhost:8080"
+      "target": "http://scheme-your-place.herokuapp.com"
     }
   },
   "scripts": {
