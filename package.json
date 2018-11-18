@@ -48,7 +48,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://scheme-your-place.herokuapp.com"
+      "target": "https://scheme-your-place.herokuapp.com"
     }
   },
   "scripts": {
