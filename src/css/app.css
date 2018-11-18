@@ -9,14 +9,29 @@
   grid-template-areas: "M D D D D" "M D D D D" "M D D D D" "M D D D D"; }
   .home .menu {
     grid-area: M;
-    background: dodgerblue;
+    background: #AED6F1;
     border-radius: 5px; }
     .home .menu .tabs {
       display: flex; }
       .home .menu .tabs .tab {
-        flex-grow: 1; }
-        .home .menu .tabs .tab--selected {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding: .5rem 0; }
+        .home .menu .tabs .tab--not-selected {
+          box-shadow: -4px -4px 3px rgba(0, 0, 0, 0.3) inset;
           background: #FFF; }
+        .home .menu .tabs .tab--not-selected-right {
+          box-shadow: 4px -4px 3px rgba(0, 0, 0, 0.3) inset;
+          background: #FFF; }
+    .home .menu input {
+      margin: .5rem; }
+    .home .menu .label {
+      margin: 0 .5rem; }
+    .home .menu .button {
+      margin: .5rem;
+      padding: .5rem;
+      background: #FFF; }
   .home .drawing-zone {
     grid-area: D;
     max-width: calc(100vh - 20px);
@@ -36,4 +51,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white; }
+        color: white;
+        transform-origin: 50% 50%; }

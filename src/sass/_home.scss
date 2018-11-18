@@ -13,16 +13,35 @@
           "M D D D D";
   .menu {
     grid-area: M;
-    background: dodgerblue;
+    background: #AED6F1;
     border-radius: 5px;
     .tabs {
       display: flex;
       .tab {
         flex-grow: 1;
-        &--selected {
+        display: flex;
+        justify-content: center;
+        padding: .5rem 0;
+        &--not-selected {
+          box-shadow: -4px -4px 3px rgba(0, 0, 0, 0.3) inset;
+          background: #FFF;
+        }
+        &--not-selected-right {
+          box-shadow: 4px -4px 3px rgba(0, 0, 0, 0.3) inset;
           background: #FFF;
         }
       }
+    }
+    input {
+      margin: .5rem;
+    }
+    .label {
+      margin: 0 .5rem;
+    }
+    .button {
+      margin: .5rem;
+      padding: .5rem;
+      background: #FFF;
     }
   }
   .drawing-zone {
@@ -46,6 +65,7 @@
         justify-content: center;
         align-items: center;
         color: white;
+        transform-origin: 50% 50%;
       }
     }
   }
