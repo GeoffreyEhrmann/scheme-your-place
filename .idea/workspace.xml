@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6e918676-1abd-4686-81ff-972b4008df37" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.css" afterPath="$PROJECT_DIR$/src/css/app.css" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DrawYourPlace.jsx" afterPath="$PROJECT_DIR$/src/pages/DrawYourPlace.jsx" />
       <change beforePath="$PROJECT_DIR$/src/sass/_home.scss" afterPath="$PROJECT_DIR$/src/sass/_home.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/Home.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="33" column="125" lean-forward="false" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
+            <state relative-caret-position="101">
+              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding>
                 <element signature="e#10#50#0" expanded="true" />
               </folding>
@@ -51,8 +53,8 @@
       <file leaf-file-name="DrawYourPlace.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/DrawYourPlace.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="80" column="187" lean-forward="false" selection-start-line="80" selection-start-column="187" selection-end-line="80" selection-end-column="187" />
+            <state relative-caret-position="101">
+              <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
               <folding>
                 <element signature="e#10#50#0" expanded="true" />
               </folding>
@@ -96,8 +98,8 @@
             <state relative-caret-position="190">
               <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="21" />
               <folding>
-                <marker date="1542509632893" expanded="true" signature="256:324" ph="{...}" />
-                <marker date="1542509632893" expanded="true" signature="1031:1138" ph="{...}" />
+                <marker date="1542512636465" expanded="true" signature="256:324" ph="{...}" />
+                <marker date="1542512636465" expanded="true" signature="1031:1138" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -113,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+            <state relative-caret-position="110">
+              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -133,6 +135,9 @@
       <find>cre</find>
       <find>meubl</find>
       <find>selectedMeuble</find>
+      <find>cons</find>
+      <find>consol</find>
+      <find>conso</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,8 +158,8 @@
         <option value="$PROJECT_DIR$/src/types/Meubles.js" />
         <option value="$PROJECT_DIR$/src/pages/Home.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/pages/DrawYourPlace.jsx" />
         <option value="$PROJECT_DIR$/src/sass/_home.scss" />
+        <option value="$PROJECT_DIR$/src/pages/DrawYourPlace.jsx" />
       </list>
     </option>
   </component>
@@ -364,16 +369,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542478707705</updated>
-      <workItem from="1542478709372" duration="32247000" />
+      <workItem from="1542478709372" duration="32559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32247000" />
+    <option name="totallyTimeSpent" value="32559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -384,7 +388,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -471,8 +475,8 @@
         <state relative-caret-position="190">
           <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="21" />
           <folding>
-            <marker date="1542509632893" expanded="true" signature="256:324" ph="{...}" />
-            <marker date="1542509632893" expanded="true" signature="1031:1138" ph="{...}" />
+            <marker date="1542512636465" expanded="true" signature="256:324" ph="{...}" />
+            <marker date="1542512636465" expanded="true" signature="1031:1138" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -503,16 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="33" column="125" lean-forward="false" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
-          <folding>
-            <element signature="e#10#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -529,21 +523,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/DrawYourPlace.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="80" column="187" lean-forward="false" selection-start-line="80" selection-start-column="187" selection-end-line="80" selection-end-column="187" />
+        <state relative-caret-position="101">
+          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
           <folding>
             <element signature="e#10#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_home.scss">
+    <entry file="file://$PROJECT_DIR$/src/pages/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="101">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#10#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
