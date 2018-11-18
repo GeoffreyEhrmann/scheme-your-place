@@ -27,16 +27,9 @@ export default class DrawYourPlace extends React.Component<Props> {
         focus: false,
     }
     componentDidMount() {
-        console.log(this.state.myPlace.long , this.myPlaceRef.offsetHeight , this.state.myPlace.larg)
         if (this.state.myPlace.long >= this.state.myPlace.larg) {
-            console.log('long > larg')
-            console.log(this.state.myPlace.larg, this.myPlaceRef.offsetHeight, this.state.myPlace.long)
-            console.log(this.state.myPlace.larg * this.myPlaceRef.offsetHeight / this.state.myPlace.long)
             this.setState({adaptedValue: this.state.myPlace.larg * this.myPlaceRef.offsetWidth / this.state.myPlace.long })
         } else {
-            console.log('larg > long')
-            console.log(this.state.myPlace.long, this.myPlaceRef.offsetHeight, this.state.myPlace.larg)
-            console.log(this.state.myPlace.long * this.myPlaceRef.offsetHeight / this.state.myPlace.larg)
             this.setState({adaptedValue: this.state.myPlace.long * this.myPlaceRef.offsetHeight / this.state.myPlace.larg })
         }
 
@@ -44,15 +37,27 @@ export default class DrawYourPlace extends React.Component<Props> {
     }
 
     addMeuble = () => {
+        const newMeuble = {
+            ...this.state.newMeuble,
+            posX: 0,
+            posY: 0,
+            color: '',
+            name: '',
+            angle: 0,
+        }
+
         this.setState({
-            mesMeubles: [...this.state.mesMeubles, this.state.newMeuble],
+            mesMeubles: [...this.state.mesMeubles, newMeuble],
             newMeuble: {
                 posX: 0,
                 posY: 0,
                 larg: 0,
                 long: 0,
+                color: '',
+                name: '',
+                angle: 0,
             }
-        });
+        }, () => this.setState({selectedMeuble: this.state.mesMeubles.length - 1}));
     }
 
     componentWillUpdate = (nextProps, nextState) => {
@@ -71,9 +76,9 @@ export default class DrawYourPlace extends React.Component<Props> {
     };
 
     follow = (event) => {
-        this.updateMesMeubles(event.clientX - this.myPlaceRef.offsetLeft - this.state.mesMeubles[this.state.selectedMeuble].long/2, 'posX')
-        this.updateMesMeubles(event.clientY - this.myPlaceRef.offsetTop - this.state.mesMeubles[this.state.selectedMeuble].larg/2, 'posY')
-        console.log(event.clientX - this.myPlaceRef.offsetLeft, event.clientY - this.myPlaceRef.offsetTop)
+        console.log(this.convertSizeHeight(this.state.mesMeubles[this.state.selectedMeuble].larg),100 , this.myPlaceRef.offsetTop)
+        this.updateMesMeubles(event.clientX - this.myPlaceRef.offsetLeft - (this.convertSizeWidth(this.state.mesMeubles[this.state.selectedMeuble].long)/100 * this.myPlaceRef.offsetWidth) / 2, 'posX')
+        this.updateMesMeubles(event.clientY - this.myPlaceRef.offsetTop - (this.convertSizeHeight(this.state.mesMeubles[this.state.selectedMeuble].larg)/100 * this.myPlaceRef.offsetHeight) / 2, 'posY')
     };
 
     stopFollow =  () => {
@@ -81,7 +86,6 @@ export default class DrawYourPlace extends React.Component<Props> {
     };
 
     startFollow = (event) => {
-        console.log(event.clientX, event.clientY)
         this.setState({isFollowing: true});
     };
 
@@ -92,30 +96,22 @@ export default class DrawYourPlace extends React.Component<Props> {
     }
 
     updateMesMeubles = (e, property) => {
-        console.log(e)
         this.setState(prevState => {
             let newList = prevState.mesMeubles;
             newList[this.state.selectedMeuble][property] = e;
-            console.log(newList[this.state.selectedMeuble])
             return {mesMeubles: newList};
         })
     }
 
     handleArrow = (e) => {
         if(this.state.mesMeubles.length !== 0 && this.state.focus) {
-            console.log("okok")
-            // arrow up/down button should select next/previous list element
             if (e.keyCode === 38) {
-                console.log('up')
                 this.updateMesMeubles(this.state.mesMeubles[this.state.selectedMeuble].posY - 1, 'posY')
             } else if (e.keyCode === 40) {
-                console.log('down')
                 this.updateMesMeubles(this.state.mesMeubles[this.state.selectedMeuble].posY + 1, 'posY')
             } else if (e.keyCode === 37) {
-                console.log('left')
                 this.updateMesMeubles(this.state.mesMeubles[this.state.selectedMeuble].posX - 1, 'posX')
             } else if (e.keyCode === 39) {
-                console.log('right')
                 this.updateMesMeubles(this.state.mesMeubles[this.state.selectedMeuble].posX + 1, 'posX')
             }
         }
@@ -124,25 +120,14 @@ export default class DrawYourPlace extends React.Component<Props> {
     myPlaceRef: ?HTMLElement;
 
     convertSizeWidth = (size) => {
-        // if (this.state.myPlace.long >= this.state.myPlace.larg) {
-            console.log(this.state.myPlace.long, size, size * 100 / this.state.myPlace.long)
             return this.myPlaceRef ? (size * 100) / this.state.myPlace.long : 0;
-        // } else {
-        //     console.log(this.state.myPlace.larg, size, size * 100 / this.state.myPlace.larg)
-        //     return this.myPlaceRef ? (size * 100) / this.state.myPlace.larg : 0;
-        // }
     }
     convertSizeHeight = (size) => {
-        // if (this.state.myPlace.long >= this.state.myPlace.larg) {
-            console.log(this.state.myPlace.larg, size, size * 100 / this.state.myPlace.larg)
             return this.myPlaceRef ? (size * 100) / this.state.myPlace.larg : 0;
-        // } else {
-        //     console.log(this.state.myPlace.long, size, size * 100 / this.state.myPlace.long)
-        //     return this.myPlaceRef ? (size * 100) / this.state.myPlace.long : 0;
-        // }
     }
 
     render() {
+        console.log(this.state.selectedMeuble)
         return (
             <div className="home">
                 <div className="menu" onClick={() => this.setState({focus: false})}>

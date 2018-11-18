@@ -29,6 +29,7 @@
     .home .menu .label {
       margin: 0 .5rem; }
     .home .menu .button {
+      cursor: pointer;
       margin: .5rem;
       padding: .5rem;
       background: #FFF; }
@@ -45,6 +46,7 @@
       position: relative;
       border: 1px solid red; }
       .home .drawing-zone .my-place .meuble {
+        cursor: pointer;
         position: absolute;
         border: 1px solid #DDD;
         box-sizing: border-box;

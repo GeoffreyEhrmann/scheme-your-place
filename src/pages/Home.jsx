@@ -31,7 +31,7 @@ export default class Home extends React.Component<Props> {
                         type="number"
                         onChange={e => this.setState({myPlace: { ...this.state.myPlace, larg: e.target.value }})}
                     />
-                    <button className="button" onClick={() => this.setState({myPlaceIsCreated : true})}>Créer mon appart</button>
+                    <button className="button" onClick={() => this.setState({myPlaceIsCreated : true})}>Créer mon appartement</button>
                 </div>
             )
         }
