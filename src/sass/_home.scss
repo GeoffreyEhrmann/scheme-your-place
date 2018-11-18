@@ -61,12 +61,12 @@
       .meuble {
         cursor: pointer;
         position: absolute;
-        border: 1px solid #DDD;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
+        background: #DDD;
         transform-origin: 50% 50%;
       }
     }

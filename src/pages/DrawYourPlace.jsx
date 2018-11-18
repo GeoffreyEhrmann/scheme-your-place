@@ -76,7 +76,6 @@ export default class DrawYourPlace extends React.Component<Props> {
     };
 
     follow = (event) => {
-        console.log(this.convertSizeHeight(this.state.mesMeubles[this.state.selectedMeuble].larg),100 , this.myPlaceRef.offsetTop)
         this.updateMesMeubles(event.clientX - this.myPlaceRef.offsetLeft - (this.convertSizeWidth(this.state.mesMeubles[this.state.selectedMeuble].long)/100 * this.myPlaceRef.offsetWidth) / 2, 'posX')
         this.updateMesMeubles(event.clientY - this.myPlaceRef.offsetTop - (this.convertSizeHeight(this.state.mesMeubles[this.state.selectedMeuble].larg)/100 * this.myPlaceRef.offsetHeight) / 2, 'posY')
     };
@@ -127,7 +126,6 @@ export default class DrawYourPlace extends React.Component<Props> {
     }
 
     render() {
-        console.log(this.state.selectedMeuble)
         return (
             <div className="home">
                 <div className="menu" onClick={() => this.setState({focus: false})}>
@@ -220,9 +218,6 @@ export default class DrawYourPlace extends React.Component<Props> {
                     }
                 </div>
                 <div className="drawing-zone">
-                    {
-                        console.log(this.state.myPlace.long, this.state.myPlace.larg, this.state.myPlace.long >= this.state.myPlace.larg)
-                    }
                     <div
                         className="my-place"
                         ref={e => this.myPlaceRef = e}
